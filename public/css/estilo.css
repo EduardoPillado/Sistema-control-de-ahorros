@@ -1,0 +1,297 @@
+:root {
+    --primary: #4ba9bf;
+    --secondary: #1d778c;
+    --tertiary: #c6f5ff;
+    --placeholderColor: #ccc;
+    --alternativeWhite: #edecf9;
+}
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, var(--alternativeWhite), var(--tertiary));
+    height: 100vh;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="datetime-local"], input[type="number"], select, textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid var(--placeholderColor);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary);
+    transition-duration: .3s;
+}
+
+.container {
+    margin: 5%;
+}
+
+.action-icons {
+    font-size: 30px;
+}
+
+/* LOGIN Y REGISTRO */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    width: 30rem;
+}
+
+h1{
+    margin: 3rem 0 2.6rem 0;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tittle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.bi-person-square {
+    font-size: 100px;
+}
+
+form p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* FIN LOGIN Y REGISTRO */
+
+/* HEADER */
+
+.offcanvas {
+    background-color: var(--alternativeWhite) !important;
+}
+
+.offcanvas-body a {
+    font-size: 19.5px;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.offcanvas-body a:hover {
+    color: var(--primary)!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background-color: var(--tertiary) !important;
+}
+
+/* FIN HEADER */
+
+/* DataTables */
+
+div.container {
+    max-width: 1200px
+}
+
+.dataTables_wrapper .dataTables_filter {
+    display: none;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px;
+    background: linear-gradient(to bottom, var(--alternativeWhite), var(--tertiary));
+    color: inherit;
+    padding: 4px;
+    width: 60px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing {
+    color: inherit;
+    margin-left: 3rem;
+    display: none;
+}
+
+div#miTabla_info {
+    display: none;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+/* FIN DataTables */
+
+/* INICIO */
+
+.inicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.inicio-column {
+    flex: 1;
+}
+
+.cant-ahorro {
+    font-size: 100px;
+}
+
+.bi-custom {
+    font-size: 40px;
+    color: var(--alternativeWhite);
+    background-color: var(--primary);
+    border-radius: 8%;
+    padding: 3px 20px 3px 20px;
+}
+
+.bi-custom:hover {
+    background-color: var(--secondary);
+}
+
+.card {
+    background-color: var(--alternativeWhite) !important;
+}
+
+.card-header {
+    background-color: var(--primary) !important;
+    color: var(--alternativeWhite) !important;
+}
+
+/* FIN INICIO */
+
+/* FORM MOVIMIENTO */
+
+.checkbox-deuda {
+    width: 95%;
+    margin: 15px 0px 15px 0px;
+}
+
+.input-icon-info {
+    margin: 15px 0px 15px 0px;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+#esDeudaLabel:hover {
+    color: #26a0da;
+}
+
+#camposDeuda {
+    display: none;
+}
+
+.bi-info-circle {
+    color: var(--secondary);
+}
+
+.bi-info-circle:hover {
+    color: var(--primary);
+}
+
+/* FIN FORM MOVIMIENTO */
+
+/* LISTA DE MOVIMIENTOS */
+
+.list-container {
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    width: 30rem;
+}
+
+/* FIN LISTA DE MOVIMIENTOS */
+
+/* LISTA DEUDAS */
+
+.deudas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cantidad-en-deudas {
+    flex: 1;
+    border-bottom: 1px solid var(--alternativeWhite);
+}
+
+.mostrar-movimiento-deuda, .abono-icon {
+    color: #000;
+}
+
+.mostrar-movimiento-deuda:hover, .abono-icon:hover {
+    color: var(--secondary);
+}
+
+.modal-header {
+    background-color: var(--primary) !important;
+}
+
+.modal-body {
+    background-color: var(--alternativeWhite) !important;
+}
+
+.deudaSinPagar {
+    background-color: #ffc9c9 !important;
+}
+
+.deudaParcial {
+    background-color: #fcffc6 !important;
+}
+
+.deudaPagada {
+    background-color: #c8ffc8 !important;
+}
+
+.badge {
+    font-size: 16px !important;
+}
+
+/* FIN LISTA DEUDAS */
